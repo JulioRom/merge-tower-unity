@@ -2,7 +2,8 @@
   "name": "MergeTower",
   "rootNamespace": "MergeTower",
   "references": [
-    "VContainer"
+    "VContainer",
+    "Unity.TextMeshPro"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
