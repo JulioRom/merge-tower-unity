@@ -39,7 +39,7 @@ namespace MergeTower
         }
 
         public long GetUpgradeCost(int currentLevel) =>
-            (long)(_config.UpgradeCostBase * Math.Pow(_config.CostMultiplier, currentLevel - 1));
+            (long)Math.Round(_config.UpgradeCostBase * Math.Pow(_config.CostMultiplier, currentLevel - 1));
 
         public long GetBalance() => _coins;
         public void SetCoinsPerSecond(long cps) => _coinsPerSecond = cps;
