@@ -7,5 +7,6 @@
 
 *.csproj
 *.sln
+*.slnx
 
 .DS_Store
