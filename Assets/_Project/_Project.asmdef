@@ -1,0 +1,12 @@
+{
+  "name": "MergeTower",
+  "rootNamespace": "MergeTower",
+  "references": [
+    "VContainer"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "autoReferenced": true
+}

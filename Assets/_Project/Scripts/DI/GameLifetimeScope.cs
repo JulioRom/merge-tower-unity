@@ -19,9 +19,12 @@ namespace MergeTower.DI
             builder.Register<SpawnSystem>(Lifetime.Singleton);
             builder.RegisterEntryPoint<SpawnSystem>();
             builder.Register<DailyGoalSystem>(Lifetime.Singleton);
-            builder.RegisterComponentInHierarchy<AdsService>();
-            builder.RegisterComponentInHierarchy<TenjinService>();
-            builder.RegisterComponentInHierarchy<IAPService>();
+            // TODO: Uncomment after importing AppLovin MAX SDK (Task 16)
+            // builder.RegisterComponentInHierarchy<AdsService>();
+            // TODO: Uncomment after importing Tenjin SDK (Task 17)
+            // builder.RegisterComponentInHierarchy<TenjinService>();
+            // TODO: Uncomment after installing Unity IAP (Task 18)
+            // builder.RegisterComponentInHierarchy<IAPService>();
         }
     }
 }

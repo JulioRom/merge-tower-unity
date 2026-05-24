@@ -11,7 +11,8 @@ namespace MergeTower
         [SerializeField] private Button _rewardedAdButton;
         [SerializeField] private CoinsChangedChannel _coinsChangedChannel;
         [SerializeField] private DailyGoalChannel _dailyGoalChannel;
-        [SerializeField] private AdsService _adsService;
+        // TODO: Restore after importing AppLovin MAX SDK (Task 16)
+        // [SerializeField] private AdsService _adsService;
 
         private void OnEnable()
         {
@@ -27,8 +28,9 @@ namespace MergeTower
 
         private void Update()
         {
-            if (_rewardedAdButton != null && _adsService != null)
-                _rewardedAdButton.interactable = _adsService.IsRewardedReady;
+            // TODO: Restore after importing AppLovin MAX SDK (Task 16)
+            // if (_rewardedAdButton != null && _adsService != null)
+            //     _rewardedAdButton.interactable = _adsService.IsRewardedReady;
         }
 
         private void OnCoinsChanged(long coins) =>
@@ -37,8 +39,11 @@ namespace MergeTower
         private void OnGoalProgress(GoalProgress progress) =>
             _dailyGoalLabel.text = $"{progress.Current}/{progress.Target}";
 
-        public void OnRewardedAdButtonPressed() =>
-            _adsService?.ShowRewarded(RewardType.ExtraElement);
+        public void OnRewardedAdButtonPressed()
+        {
+            // TODO: Restore after importing AppLovin MAX SDK (Task 16)
+            // _adsService?.ShowRewarded(RewardType.ExtraElement);
+        }
 
         private static string FormatCoins(long coins)
         {
