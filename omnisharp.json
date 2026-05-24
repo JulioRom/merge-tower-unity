@@ -1,0 +1,5 @@
+{
+  "solution": "merge-tower-unity.sln",
+  "enableRoslynAnalyzers": true,
+  "enableEditorConfigSupport": true
+}
