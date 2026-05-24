@@ -1,0 +1,13 @@
+{
+  "name": "MergeTower",
+  "rootNamespace": "MergeTower",
+  "references": [
+    "VContainer",
+    "Unity.TextMeshPro"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "autoReferenced": true
+}
