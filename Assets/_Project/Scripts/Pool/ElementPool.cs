@@ -5,7 +5,7 @@ namespace MergeTower
 {
     public sealed class ElementPool
     {
-        private readonly IObjectPool<ElementView> _pool;
+        private readonly ObjectPool<ElementView> _pool;
 
         public ElementPool(ElementView prefab, Transform parent,
             int defaultCapacity = 20, int maxSize = 50)
